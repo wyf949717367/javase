@@ -2,7 +2,7 @@ package com.baizhi.io.io.io;
 
 import java.io.*;
 import java.nio.Buffer;
-//缓冲字符流
+//缓冲字符流     第一种  BufferedWriter
 public class ioTest7 {
     public static void main(String[] args) throws IOException {
         //创建缓冲字符输入流

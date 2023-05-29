@@ -11,9 +11,7 @@ public class ioTest2 {
         try {
             out = new FileOutputStream("day24\\file\\hello.txt");
             out.write("abc".getBytes());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        }catch (IOException e) {
             e.printStackTrace();
         } finally {
             //关闭流
