@@ -1,0 +1,107 @@
+3.Throwable  Error  Exception 编译时异常 和运行时异常
+4.已检查异常  必须处理  运行时异常 不做处理
+5.c
+6.c
+7.a
+8.c
+9.a
+10.throw new NullPointerException throw new ClassCastException ("类型转换出错")
+11.     ma();
+    }
+    public static int ma(){
+        try{
+            m();
+            return 100;
+        }catch(ArithmeticException e){
+            System.out.println("ArithmeticException");
+        }catch(MyException e){
+            System.out.println("MyException");
+        }catch(Exception e){
+            System.out.println("Exception");
+        }finally{
+            return 100;
+        }
+    }
+    public static void m() throws MyException {
+        throw new MyException();
+    }
+}
+
+12.ab  d
+13.
+n=1
+ma1
+mb1
+Catch EOFException
+In finally
+main2
+
+
+n=2
+main1
+ma1
+mb1
+Catch IOException
+In finally
+main2
+
+n=3
+main1
+ma1
+mb1
+Catch SQLException
+In finally
+main2
+
+n=4
+main1
+ma1
+mb1
+Catch Exception
+In finally
+main2
+
+n=5
+main1
+ma1
+mb1
+mb2
+ma2
+In finally
+main2
+
+
+
+14.a
+15.100 100
+
+
+16.ma1
+ma21
+In Finally
+
+读入的值为0时，输出：
+ma1
+In Finally
+
+17.
+EOFException ,FileNotFoundException
+
+18.
+a
+19
+ab
+
+20
+​		1、final finally关键字 有特殊含义  finalize是Object类中的方法的名称
+
+​		2、final修饰符  修饰类 方法 属性 局部变量
+
+​			finally在异常处理中 和try catch结合使用 ，无论是否出现异常，finally代码块都会执行
+
+​			finalize方法在垃圾回收器回收对象时调用对象的该方法
+
+21.会 finally在异常处理中 和try catch结合使用 ，无论是否出现异常，finally代码块都会执行
+
+22.
+Step B Step E
